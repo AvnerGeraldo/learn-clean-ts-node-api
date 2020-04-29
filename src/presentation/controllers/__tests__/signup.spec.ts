@@ -1,9 +1,9 @@
-import { SignupController } from '../signup'
+import { SignUpController } from '../signup'
 
 describe('Signup Controller', () => {
   // Test if fields are sent by the route
   test('Should return 400 if no name is provided', () => {
-    const sut = new SignupController() // sut = System under test
+    const sut = new SignUpController() // sut = System under test
     const httpRequest = { // Post Request
       body: {
         email: 'any_email@email.com',
@@ -17,7 +17,7 @@ describe('Signup Controller', () => {
   })
 
   test('Should return 400 if no email is provided', () => {
-    const sut = new SignupController() // sut = System under test
+    const sut = new SignUpController() // sut = System under test
     const httpRequest = { // Post Request
       body: {
         name: 'any_name',
