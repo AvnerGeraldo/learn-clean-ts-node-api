@@ -2,9 +2,7 @@
 import { badRequest, serverError } from '../helpers/http-helper'
 
 // Intefaces
-import { HttpResponse, HttpRequest } from '../protocols/http'
-import { Controller } from '../protocols/controller'
-import { EmailValidator } from '../protocols/emailValidator'
+import { HttpResponse, HttpRequest, Controller, EmailValidator } from '../protocols'
 
 // Errors
 import { MissingParamError, InvalidParamError } from '../errors'
