@@ -1,0 +1,11 @@
+version: '3'
+services: 
+    mongo:
+        image: mongo
+        restart: always
+        container_name: clean-node-api-mongodb
+        ports: 
+            - "27017:27017"
+        volumes: 
+            - .docker/mongodb/data/db:/data/db
+            - .docker/mongodb/data/log:/var/log/mongodb
